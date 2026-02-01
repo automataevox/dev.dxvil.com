@@ -15,13 +15,13 @@ export default function Resume() {
 
     return (
         <article className="prose max-w-none flex flex-col gap-8">
-            <div className="flex items-start justify-between">
+            <div className="flex flex-col sm:flex-row items-start justify-between">
                 <div>
                     <h2 className="text-2xl font-bold">{data.basics.name}</h2>
                     <div className="text-sm text-muted-foreground">{data.basics.label} • {data.basics.location}</div>
                     <div className="mt-2 text-sm text-muted-foreground">{data.basics.summary}</div>
                 </div>
-                <div className="flex flex-col items-end gap-2">
+                <div className="flex flex-col items-start sm:items-end gap-2 sm:mt-0 mt-4">
                     <a href={`mailto:${data.basics.email}`} className="text-sm underline text-muted-foreground">{data.basics.email}</a>
                     <a href={data.basics.website} target="_blank" rel="noopener noreferrer" className="text-sm underline text-muted-foreground">{data.basics.website}</a>
                     {data.basics.github && (<a href={data.basics.github} target="_blank" rel="noopener noreferrer" className="text-sm underline text-muted-foreground">GitHub</a>)}
@@ -34,9 +34,9 @@ export default function Resume() {
                 <div className="mt-3 space-y-4">
                     {data.experience.map((exp: any, idx: number) => (
                         <div key={idx}>
-                            <div className="flex justify-between font-medium">
+                            <div className="flex flex-col sm:flex-row sm:justify-between font-medium">
                                 <div>{exp.position} — {exp.company}</div>
-                                <div className="text-sm text-muted-foreground">{exp.startDate} — {exp.endDate || 'Present'}</div>
+                                <div className="text-sm text-muted-foreground mt-1 sm:mt-0">{exp.startDate} — {exp.endDate || 'Present'}</div>
                             </div>
                             <div className="text-sm text-muted-foreground mt-1">{exp.summary}</div>
                             {exp.highlights?.length > 0 && (
@@ -109,7 +109,7 @@ export default function Resume() {
 
             <Separator />
 
-            <section className="grid grid-cols-2 gap-4">
+            <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                     <h3 className="text-lg font-semibold">Certifications</h3>
                     <div className="mt-2 text-sm text-muted-foreground">

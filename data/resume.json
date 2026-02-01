@@ -183,12 +183,6 @@
             "name": "Web Development",
             "issuer": "Mimo",
             "date": "2022-03"
-        },
-        {
-            "name": "Web Development Fundamentals course",
-            "issuer": "Sololearn",
-            "date": "2022-03",
-            "credentialId": "#1141-25182761"
         }
     ],
     "languages": [
