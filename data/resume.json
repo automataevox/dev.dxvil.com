@@ -1,0 +1,204 @@
+{
+    "pdfTitle": "Jaroslav-Resume",
+    "basics": {
+        "name": "Jaroslav Maša",
+        "label": "Fullstack Developer & Sysadmin",
+        "email": "dev@dxvil.com",
+        "phone": "+420 608 420 281",
+        "website": "https://dev.dxvil.com",
+        "github": "https://github.com/automataevox",
+        "linkedin": "https://www.linkedin.com/in/jaroslavmasa",
+        "location": "Remote / Hybrid (Czechia)",
+        "summary": "Fullstack developer with systems and automation background—bridging dev and ops to deliver reliable services."
+    },
+    "skills": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Linux",
+        "Docker",
+        "Automation",
+        "Postgres",
+        "Java",
+        "PHP",
+        "REST APIs"
+    ],
+    "experience": [
+        {
+            "company": "Mad-Hall s.r.o.",
+            "position": "Fullstack Developer",
+            "startDate": "2025-11",
+            "endDate": "Present",
+            "location": "Remote",
+            "summary": "Developing and maintaining web applications using PHP.",
+            "highlights": [
+                "Built and maintained web applications with PHP",
+                "Collaborated on feature development and bug fixes"
+            ]
+        },
+        {
+            "company": "MONETA Money Bank, a.s.",
+            "position": "System Administrator",
+            "startDate": "2024-01",
+            "endDate": "2025-07",
+            "location": "Prague, Czech Republic",
+            "summary": "Administer DEV/TST/PROD environments; automate operations and support backend services.",
+            "highlights": [
+                "Maintained Apache/Tomcat stacks and automated maintenance",
+                "Improved reliability through automation and monitoring"
+            ]
+        },
+        {
+            "company": "2Ring",
+            "position": "Fullstack Developer (Backend)",
+            "startDate": "2023-07",
+            "endDate": "2023-09",
+            "location": "Liberec, Czech Republic",
+            "summary": "Implemented REST APIs and backend features for enterprise tooling.",
+            "highlights": [
+                "Delivered REST endpoints and business logic",
+                "Authored tests and participated in code reviews"
+            ]
+        },
+        {
+            "company": "Mailprofiler s.r.o.",
+            "position": "System Administrator",
+            "startDate": "2022-09",
+            "endDate": "2023-07",
+            "location": "Liberec, Czech Republic",
+            "summary": "Managed internal infrastructure and automated operational tasks.",
+            "highlights": [
+                "Managed Linux/Windows servers and email delivery",
+                "Automated tasks to improve stability"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Account API",
+            "url": "https://github.com/automataevox/account-api",
+            "summary": "Spring Boot REST API (Java 21) demonstrating layered architecture, DTO validation, error handling, and state-based account logic.",
+            "skills": [
+                "Java",
+                "Spring Boot",
+                "REST API"
+            ]
+        },
+        {
+            "name": "MinecraftClone",
+            "url": "https://github.com/automataevox/MinecraftClone",
+            "summary": "A custom voxel engine written in Java, focused on system design, performance optimization, and data structure management. Demonstrates chunkeds world management, rendering pipeline organization, and performance tuning.",
+            "skills": [
+                "Java",
+                "OpenGL",
+                "LWJGL"
+            ]
+        },
+        {
+            "name": "Pika Bot",
+            "url": "https://github.com/automataevox/pika-bot",
+            "summary": "A Discord bot written in JavaScript, structured with modular command files and bot logic for interaction on Discord. Demonstrates bot setup with event handling, slash commands, and configuration via `package.json` and command modules.",
+            "skills": [
+                "JavaScript",
+                "Discord.js",
+                "Node.js"
+            ]
+        },
+        {
+            "name": "DXVIL Main Page",
+            "url": "https://github.com/automataevox/dxvil_links",
+            "summary": "A Next.js & TailwindCSS‑based web project laid out as a links/landing page app using TypeScript and React. Demonstrates full‑stack frontend configuration and component structuring.",
+            "skills": [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "name": "Discord Bot with AI Module",
+            "summary": "A Discord bot in JavaScript with modular event handlers and an AI module (`ai_module.js`) that connected to CharacterAI services (now deprecated), demonstrating AI-driven bot interactions and message processing.",
+            "skills": [
+                "JavaScript",
+                "Node.js",
+                "Discord.js",
+                "AI integration"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "SČMSD Humpolec s.r.o.",
+            "area": "Computer Science",
+            "startDate": "2018",
+            "endDate": "2022",
+            "gpa": "3.8"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Gemini Certified Educator",
+            "issuer": "Google for Education",
+            "date": "2025-11",
+            "expires": "2028-11",
+            "credentialId": "167943547"
+        },
+        {
+            "name": "PHP",
+            "issuer": "Sololearn",
+            "date": "2023-02",
+            "credentialId": "CT-2DFFXNSW"
+        },
+        {
+            "name": "Game Development with JS",
+            "issuer": "Sololearn",
+            "date": "2022-09",
+            "credentialId": "CT-LRKHNGT5"
+        },
+        {
+            "name": "HTML course",
+            "issuer": "Sololearn",
+            "date": "2022-03",
+            "credentialId": "#1014-25182761"
+        },
+        {
+            "name": "Java",
+            "issuer": "Sololearn",
+            "date": "2022-03",
+            "credentialId": "25182761-1068"
+        },
+        {
+            "name": "Responsive Web Design course",
+            "issuer": "Sololearn",
+            "date": "2022-03",
+            "credentialId": "#1162-25182761"
+        },
+        {
+            "name": "SQL",
+            "issuer": "Mimo",
+            "date": "2022-03",
+            "notes": "Skills: Server Side"
+        },
+        {
+            "name": "Web Development",
+            "issuer": "Mimo",
+            "date": "2022-03"
+        },
+        {
+            "name": "Web Development Fundamentals course",
+            "issuer": "Sololearn",
+            "date": "2022-03",
+            "credentialId": "#1141-25182761"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Czech",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "Advanced"
+        }
+    ]
+}

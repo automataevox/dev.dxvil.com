@@ -1,0 +1,26 @@
+{
+    "projects": [
+        {
+            "name": "DXVIL Main Page",
+            "url": "https://github.com/automataevox/dxvil_links",
+            "demo": "https://dxvil.com",
+            "summary": "A Next.js & TailwindCSS‑based web project laid out as a links page app.",
+            "skills": [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "name": "MinecraftClone",
+            "url": "https://github.com/automataevox/MinecraftClone",
+            "summary": "A custom voxel engine written in Java.",
+            "skills": [
+                "Java",
+                "OpenGL",
+                "LWJGL"
+            ]
+        }
+    ]
+}
