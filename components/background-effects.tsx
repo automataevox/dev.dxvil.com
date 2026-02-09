@@ -61,7 +61,7 @@ export const BackgroundEffects = ({ mousePosition }: BackgroundEffectsProps) => 
             ))}
             
             {/* Grid pattern overlay */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.03)_1px,transparent_0)] bg-[length:50px_50px] opacity-30" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.03)_1px,transparent_0)] bg-size-[50px_50px] opacity-30" />
         </div>
     );
 };

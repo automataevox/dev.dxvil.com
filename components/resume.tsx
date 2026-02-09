@@ -94,7 +94,7 @@ export default function Resume() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {data.competencies.map((comp: string, idx: number) => (
                             <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
-                                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0"></div>
                                 <span className="text-sm leading-relaxed">{comp}</span>
                             </div>
                         ))}
@@ -120,7 +120,7 @@ export default function Resume() {
                                     <ul className="space-y-2">
                                         {exp.highlights.map((h, i: number) => (
                                             <li key={i} className="flex items-start gap-3 text-sm">
-                                                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                                 <span className="leading-relaxed">{h}</span>
                                             </li>
                                         ))}
@@ -146,7 +146,7 @@ export default function Resume() {
                         <ul className="space-y-2">
                             {data.featuredProject.highlights.map((h: string, i: number) => (
                                 <li key={i} className="flex items-start gap-3 text-sm">
-                                    <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                    <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                     <span className="leading-relaxed">{h}</span>
                                 </li>
                             ))}

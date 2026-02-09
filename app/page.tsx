@@ -143,7 +143,7 @@ export default function Page() {
                                     }}
                                 >
                                     <div className="flex items-start gap-4">
-                                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                                        <div className="shrink-0 w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                                             <HugeiconsIcon icon={strength.icon} size={20} className="text-primary" />
                                         </div>
                                         <span className="text-sm leading-relaxed text-muted-foreground group-hover:text-foreground transition-colors">
@@ -305,7 +305,7 @@ export default function Page() {
                         <h2 className="text-3xl font-bold text-center mb-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>Technology Stack</h2>
                         <div className="max-w-5xl mx-auto">
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-                                <Card className="border-0 bg-gradient-to-br from-blue-500/10 to-blue-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                                <Card className="border-0 bg-linear-to-br from-blue-500/10 to-blue-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
                                     <CardHeader>
                                         <CardTitle className="text-base flex items-center gap-2">
                                             <div className="w-2 h-2 bg-blue-500 rounded-full group-hover:animate-ping"></div>
@@ -323,7 +323,7 @@ export default function Page() {
                                     </CardContent>
                                 </Card>
 
-                                <Card className="border-0 bg-gradient-to-br from-green-500/10 to-green-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-green-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                                <Card className="border-0 bg-linear-to-br from-green-500/10 to-green-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-green-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
                                     <CardHeader>
                                         <CardTitle className="text-base flex items-center gap-2">
                                             <div className="w-2 h-2 bg-green-500 rounded-full group-hover:animate-ping"></div>
@@ -341,7 +341,7 @@ export default function Page() {
                                     </CardContent>
                                 </Card>
 
-                                <Card className="border-0 bg-gradient-to-br from-purple-500/10 to-purple-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                                <Card className="border-0 bg-linear-to-br from-purple-500/10 to-purple-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
                                     <CardHeader>
                                         <CardTitle className="text-base flex items-center gap-2">
                                             <div className="w-2 h-2 bg-purple-500 rounded-full group-hover:animate-ping"></div>
@@ -359,7 +359,7 @@ export default function Page() {
                                     </CardContent>
                                 </Card>
 
-                                <Card className="border-0 bg-gradient-to-br from-orange-500/10 to-orange-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-orange-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                                <Card className="border-0 bg-linear-to-br from-orange-500/10 to-orange-600/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-orange-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
                                     <CardHeader>
                                         <CardTitle className="text-base flex items-center gap-2">
                                             <div className="w-2 h-2 bg-orange-500 rounded-full group-hover:animate-ping"></div>
@@ -384,7 +384,7 @@ export default function Page() {
                         <h2 className="text-3xl font-bold text-center mb-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>Professional Approach</h2>
                         <div className="max-w-4xl mx-auto">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Card className="border-0 bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm opacity-0 animate-fade-in-up hover:shadow-lg transition-all duration-300" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
+                                <Card className="border-0 bg-linear-to-br from-card/50 to-card/30 backdrop-blur-sm opacity-0 animate-fade-in-up hover:shadow-lg transition-all duration-300" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
                                     <CardHeader>
                                         <CardTitle className="text-lg flex items-center gap-3">
                                             <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -393,25 +393,25 @@ export default function Page() {
                                     </CardHeader>
                                     <CardContent className="space-y-3">
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Fast onboarding and quick understanding of existing codebases</span>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Clean, well-structured commits with meaningful messages</span>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Production-ready code with error handling and security considerations</span>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Thorough documentation and clear communication</span>
                                         </div>
                                     </CardContent>
                                 </Card>
 
-                                <Card className="border-0 bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm opacity-0 animate-fade-in-up hover:shadow-lg transition-all duration-300" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
+                                <Card className="border-0 bg-linear-to-br from-card/50 to-card/30 backdrop-blur-sm opacity-0 animate-fade-in-up hover:shadow-lg transition-all duration-300" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
                                     <CardHeader>
                                         <CardTitle className="text-lg flex items-center gap-3">
                                             <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -420,19 +420,19 @@ export default function Page() {
                                     </CardHeader>
                                     <CardContent className="space-y-3">
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Product mindset with business requirement translation</span>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Creative background as a music producer brings unique problem-solving perspective</span>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">Continuous learning and adoption of latest best practices</span>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                                             <span className="text-sm">End-to-end ownership from development to production deployment</span>
                                         </div>
                                     </CardContent>
