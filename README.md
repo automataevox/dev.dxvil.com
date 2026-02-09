@@ -67,7 +67,7 @@ Personal portfolio website showcasing software engineering work, projects, and t
 
 **Status: ✅ Working in Testing Mode**
 
-The contact form automatically sends emails via Resend! Currently configured to send to **musicbyblakk@gmail.com** (testing mode).
+The contact form automatically sends emails via Resend! Currently configured to send to **dev@dxvil.com** (testing mode).
 
 **Quick Test:**
 ```bash
