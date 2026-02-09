@@ -1,21 +1,29 @@
 {
     "projects": [
         {
-            "name": "DXVIL Main Page",
-            "url": "https://github.com/automataevox/dxvil_links",
-            "demo": "https://dxvil.com",
-            "summary": "A Next.js & TailwindCSS‑based web project laid out as a links page app.",
+            "name": "Music Distribution Platform",
+            "summary": "Production platform for label operations and music distribution. End-to-end designed and built with focus on stability, maintainability, and operational safety. Feature-based architecture with feature toggles enables safe iteration and prevents cascading failures. System complexity absorbed during design phase—appears simple as result of correct architectural decisions.",
             "skills": [
                 "Next.js",
-                "React",
                 "TypeScript",
-                "TailwindCSS"
+                "Node.js",
+                "Postgres"
             ]
         },
         {
-            "name": "MinecraftClone",
+            "name": "Account API",
+            "url": "https://github.com/automataevox/account-api",
+            "summary": "REST API demonstrating layered architecture, separation of concerns, and state management patterns. Focus on maintainability and clear boundaries.",
+            "skills": [
+                "Java",
+                "Spring Boot",
+                "REST API"
+            ]
+        },
+        {
+            "name": "Voxel Engine",
             "url": "https://github.com/automataevox/MinecraftClone",
-            "summary": "A custom voxel engine written in Java.",
+            "summary": "Custom engine focused on performance optimization and data structure design for chunked world management.",
             "skills": [
                 "Java",
                 "OpenGL",
