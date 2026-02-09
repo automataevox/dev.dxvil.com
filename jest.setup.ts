@@ -48,8 +48,8 @@ if (typeof Headers === 'undefined') {
         if (Array.isArray(init)) {
           init.forEach(([key, value]) => this.headers.set(key.toLowerCase(), value));
         } else if (init instanceof Headers) {
-          (init as Headers & { headers: Map<string, string> }).headers.forEach((value: string, key: string) => {
-            this.headers.set(key, value);
+          init.forEach((value: string, key: string) => {
+            this.headers.set(key.toLowerCase(), value);
           });
         } else {
           Object.entries(init).forEach(([key, value]) => {

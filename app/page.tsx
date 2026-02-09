@@ -217,8 +217,8 @@ export default function Page() {
                                 </CardHeader>
                                 <CardContent className="space-y-4">
                                     <p className="text-muted-foreground leading-relaxed">
-                                        A music label needed a production platform to manage their catalog distribution across multiple streaming services.
-                                        The existing system was unstable, difficult to maintain, and couldn&apos;t handle their growing catalog of 50K+ tracks.
+                                        A music label needed a platform to manage their catalog distribution across multiple streaming services.
+                                        The existing system was unstable, difficult to maintain, and couldn&apos;t scale with their growing needs.
                                     </p>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                                         <div className="p-4 bg-muted/30 rounded-lg">
@@ -233,7 +233,7 @@ export default function Page() {
                                         <div className="p-4 bg-muted/30 rounded-lg">
                                             <h4 className="font-semibold text-sm mb-2 text-green-600">Business Impact</h4>
                                             <ul className="text-sm text-muted-foreground space-y-1">
-                                                <li>• $50K+ monthly revenue at risk</li>
+                                                <li>• Platform stability critical for operations</li>
                                                 <li>• Artist relationships strained by delays</li>
                                                 <li>• Competitive disadvantage in market</li>
                                                 <li>• Team burnout from manual processes</li>
@@ -250,12 +250,12 @@ export default function Page() {
                                 <CardContent className="space-y-4">
                                     <p className="text-muted-foreground leading-relaxed">
                                         Designed and built an end-to-end platform prioritizing long-term stability over rapid feature development.
-                                        Implemented modular architecture with feature toggles to enable safe iteration.
+                                        Implemented modular architecture with feature toggles to enable safe iteration. Platform in active development since November 2025.
                                     </p>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <div className="text-center p-4">
-                                            <div className="text-2xl font-bold text-primary mb-1">99.9%</div>
-                                            <div className="text-sm text-muted-foreground">Platform Uptime</div>
+                                            <div className="text-2xl font-bold text-primary mb-1">Active Dev</div>
+                                            <div className="text-sm text-muted-foreground">Since Nov 2025</div>
                                         </div>
                                         <div className="text-center p-4">
                                             <div className="text-2xl font-bold text-primary mb-1">15min</div>

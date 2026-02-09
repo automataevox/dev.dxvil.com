@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "Music Distribution Platform",
-            "summary": "Production platform for label operations and music distribution. End-to-end designed and built with focus on stability, maintainability, and operational safety. Feature-based architecture with feature toggles enables safe iteration and prevents cascading failures. System complexity absorbed during design phase—appears simple as result of correct architectural decisions.",
+            "summary": "Platform for label operations and music distribution, in active development since November 2025. End-to-end designed and built with focus on stability, maintainability, and operational safety. Feature-based architecture with feature toggles enables safe iteration and prevents cascading failures. System complexity absorbed during design phase—appears simple as result of correct architectural decisions.",
             "skills": [
                 "Next.js",
                 "TypeScript",

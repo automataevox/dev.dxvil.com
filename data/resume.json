@@ -31,15 +31,15 @@
         {
             "company": "Mad-Hall s.r.o.",
             "position": "Developer",
-            "startDate": "Nov 2024",
+            "startDate": "Nov 2025",
             "endDate": "Present",
             "location": "Remote",
-            "summary": "Responsible for application stability and feature delivery in production web systems.",
+            "summary": "Building music distribution platform with focus on stability and maintainability. End-to-end ownership from architecture through implementation.",
             "highlights": [
-                "Own the operational reliability of production applications serving 10K+ daily users",
-                "Make trade-off decisions balancing feature development with system stability",
-                "Reduced incident response time by 40% through improved monitoring and automation",
-                "Implemented feature toggles preventing 3 major production rollbacks"
+                "Design and implement platform architecture prioritizing long-term stability",
+                "Make trade-off decisions balancing feature development with system maintainability",
+                "Establish monitoring and automation practices for operational reliability",
+                "Implement feature toggle architecture enabling safe iteration and rollbacks"
             ]
         },
         {
@@ -85,7 +85,7 @@
     ],
     "featuredProject": {
         "name": "Music Distribution Platform",
-        "summary": "End-to-end designed and built production platform for label operations and music distribution. Architecture decisions prioritized long-term maintainability and operational stability over rapid feature expansion. Serves 50K+ tracks with 99.9% uptime.",
+        "summary": "End-to-end designed and built platform for label operations and music distribution, in active development since November 2025. Architecture decisions prioritized long-term maintainability and operational stability over rapid feature expansion.",
         "highlights": [
             "Feature-based modular architecture with feature toggles enabling zero-downtime deployments",
             "Designed to prevent cascading failures through proper service boundaries and circuit breakers",
@@ -98,14 +98,9 @@
     },
     "additionalProjects": [
         {
-            "name": "Account API",
-            "url": "https://github.com/automataevox/account-api",
-            "summary": "Layered REST API demonstrating separation of concerns and state management patterns."
-        },
-        {
-            "name": "Voxel Engine",
-            "url": "https://github.com/automataevox/MinecraftClone",
-            "summary": "Custom engine focused on performance optimization and data structure design for chunked world management."
+            "name": "Portfolio Website",
+            "url": "https://github.com/automataevox/dev.dxvil.com",
+            "summary": "Personal portfolio built with modern web technologies featuring custom cursor interactions, parallax effects, and functional contact form with automated email delivery. Comprehensive test coverage (156 tests) following SOLID principles."
         }
     ],
     "education": [
