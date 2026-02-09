@@ -258,7 +258,7 @@ export default function Page() {
                                             <div className="text-sm text-muted-foreground">Since Nov 2025</div>
                                         </div>
                                         <div className="text-center p-4">
-                                            <div className="text-2xl font-bold text-primary mb-1">15min</div>
+                                            <div className="text-2xl font-bold text-primary mb-1">3min</div>
                                             <div className="text-sm text-muted-foreground">Release Deployment</div>
                                         </div>
                                         <div className="text-center p-4">

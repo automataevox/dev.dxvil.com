@@ -57,49 +57,10 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
 
-  build:
-    name: Build Application
-    runs-on: ubuntu-latest
-    needs: [lint, test]
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Next.js app
-        run: npm run build
-
-      - name: Verify build output
-        run: |
-          if [ -d ".next" ]; then
-            echo "✓ Build output directory exists"
-            ls -la .next/
-          else
-            echo "✗ Build output directory not found"
-            exit 1
-          fi
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        if: success()
-        with:
-          name: build-output
-          path: .next/
-          retention-days: 1
-          if-no-files-found: warn
-
   deploy-preview:
     name: Deploy Preview to Vercel
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [lint, test]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Checkout code
@@ -135,7 +96,7 @@ jobs:
   deploy-production:
     name: Deploy to Production
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [lint, test]
     if: github.event_name == 'push' && github.ref == 'refs/heads/prod'
     environment:
       name: production
