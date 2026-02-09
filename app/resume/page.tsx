@@ -18,6 +18,8 @@ export default function Page() {
     });
 
     useEffect(() => {
+        // Initial animation state - suppress warning as this is the intended behavior
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsVisible(true);
     }, []);
 

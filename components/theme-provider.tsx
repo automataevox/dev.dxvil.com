@@ -19,8 +19,8 @@ export default function ThemeProvider(): null {
     else mq.addListener(apply);
 
     return () => {
-      if (mq.removeEventListener) mq.removeEventListener("change", apply as any);
-      else mq.removeListener(apply as any);
+      if (mq.removeEventListener) mq.removeEventListener("change", apply);
+      else mq.removeListener(apply);
     };
   }, []);
 

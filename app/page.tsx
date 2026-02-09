@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import workData from "@/data/work.json";
 import { useState, useEffect, useRef } from "react";
@@ -39,6 +39,8 @@ export default function Page() {
 
     // Set visibility after mount
     useEffect(() => {
+        // Initial animation state - suppress warning as this is the intended behavior
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsVisible(true);
     }, []);
 
@@ -77,7 +79,7 @@ export default function Page() {
                         </div>
                         <div className={`mt-6 flex justify-center transition-all duration-1000 delay-700 ${isTypingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <blockquote className="text-base text-foreground/80 italic border-l-4 border-primary/50 pl-4 py-2 bg-primary/5 rounded-r-lg pr-4">
-                                "Code with purpose. Build for scale. Ship with confidence."
+                                &ldquo;Code with purpose. Build for scale. Ship with confidence.&rdquo;
                             </blockquote>
                         </div>
                         <div className={`mt-8 flex items-center justify-center gap-4 transition-all duration-1000 delay-700 ${isTypingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
@@ -156,7 +158,7 @@ export default function Page() {
                     <section id="work" className="mt-20">
                         <h2 className="text-3xl font-bold text-center mb-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>Selected Projects</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {(workData.projects || []).map((p: any, index: number) => (
+                            {(workData.projects || []).map((p: { name: string; summary: string; url?: string; demo?: string; skills: string[] }, index: number) => (
                                 <Card
                                     key={p.name}
                                     className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/50 backdrop-blur-sm opacity-0 animate-fade-in-up"
@@ -213,7 +215,7 @@ export default function Page() {
                                 <CardContent className="space-y-4">
                                     <p className="text-muted-foreground leading-relaxed">
                                         A music label needed a production platform to manage their catalog distribution across multiple streaming services.
-                                        The existing system was unstable, difficult to maintain, and couldn't handle their growing catalog of 50K+ tracks.
+                                        The existing system was unstable, difficult to maintain, and couldn&apos;t handle their growing catalog of 50K+ tracks.
                                     </p>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                                         <div className="p-4 bg-muted/30 rounded-lg">

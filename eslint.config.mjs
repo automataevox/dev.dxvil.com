@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Custom ignores:
+    "coverage/**",
+    "components/component-example.tsx",
+    "components/example.tsx",
   ]),
 ]);
 

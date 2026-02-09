@@ -108,7 +108,7 @@ describe('ThemeProvider', () => {
         mockMatchMedia.mockImplementation((query) => ({
             matches: true,
             media: query,
-            addEventListener: (event: string, handler: any) => {
+            addEventListener: (event: string, handler: (e: MediaQueryListEvent) => void) => {
                 if (event === 'change') {
                     changeHandler = handler;
                 }

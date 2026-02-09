@@ -124,7 +124,7 @@ describe('Navigation', () => {
     })
 
     it('should not call onSectionClick when Home link is clicked', async () => {
-      const user = userEvent.setup()
+
       render(<Navigation activeSection="resume" onSectionClick={mockOnSectionClick} />)
       
       // Home links are <a> tags, not buttons, so they won't call onSectionClick

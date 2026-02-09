@@ -7,8 +7,50 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
+interface ResumeData {
+    basics: {
+        name: string;
+        label: string;
+        email: string;
+        location: string;
+        summary: string;
+        github?: string;
+        linkedin?: string;
+    };
+    competencies: string[];
+    experience: Array<{
+        company: string;
+        position: string;
+        startDate: string;
+        endDate?: string;
+        summary: string;
+        highlights?: string[];
+    }>;
+    featuredProject: {
+        name: string;
+        summary: string;
+        highlights: string[];
+        technologies: string[];
+    };
+    additionalProjects?: Array<{
+        name: string;
+        url?: string;
+        summary: string;
+    }>;
+    techStack: Record<string, string[]>;
+    education: Array<{
+        institution: string;
+        area: string;
+        period: string;
+    }>;
+    languages: Array<{
+        language: string;
+        fluency: string;
+    }>;
+}
+
 export default function Resume() {
-    const data: any = resumeData;
+    const data = resumeData as ResumeData;
 
     return (
         <article className="max-w-none space-y-8">
@@ -67,16 +109,16 @@ export default function Resume() {
                 </CardHeader>
                 <CardContent>
                     <div className="space-y-6">
-                        {data.experience.map((exp: any, idx: number) => (
+                        {data.experience.map((exp, idx: number) => (
                             <div key={idx} className="border-l-2 border-primary/20 pl-6 pb-6 last:pb-0">
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
                                     <div className="font-semibold text-lg">{exp.position} — {exp.company}</div>
                                     <div className="text-sm text-muted-foreground font-medium">{exp.startDate} — {exp.endDate || 'Present'}</div>
                                 </div>
                                 <div className="text-muted-foreground mb-3 leading-relaxed">{exp.summary}</div>
-                                {exp.highlights?.length > 0 && (
+                                {exp.highlights && exp.highlights.length > 0 && (
                                     <ul className="space-y-2">
-                                        {exp.highlights.map((h: string, i: number) => (
+                                        {exp.highlights.map((h, i: number) => (
                                             <li key={i} className="flex items-start gap-3 text-sm">
                                                 <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                                                 <span className="leading-relaxed">{h}</span>
@@ -128,7 +170,7 @@ export default function Resume() {
                     </CardHeader>
                     <CardContent>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {data.additionalProjects.map((p: any, i: number) => (
+                            {data.additionalProjects.map((p, i: number) => (
                                 <div key={i} className="p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
                                     {p.url ? (
                                         <a href={p.url} target="_blank" rel="noreferrer" className="font-semibold hover:text-primary transition-colors inline-flex items-center gap-2 mb-2">
@@ -155,7 +197,7 @@ export default function Resume() {
                 </CardHeader>
                 <CardContent>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {Object.entries(data.techStack).map(([category, items]: [string, any]) => (
+                        {Object.entries(data.techStack).map(([category, items]: [string, string[]]) => (
                             <div key={category} className="space-y-2">
                                 <h4 className="font-semibold capitalize text-sm text-muted-foreground">{category}</h4>
                                 <div className="flex flex-wrap gap-2">
@@ -179,7 +221,7 @@ export default function Resume() {
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
-                            {data.education.map((ed: any, idx: number) => (
+                            {data.education.map((ed, idx: number) => (
                                 <div key={idx} className="pb-4 last:pb-0">
                                     <div className="font-semibold">{ed.institution}</div>
                                     <div className="text-muted-foreground">{ed.area}</div>
@@ -196,7 +238,7 @@ export default function Resume() {
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-3">
-                            {data.languages.map((l: any, i: number) => (
+                            {data.languages.map((l, i: number) => (
                                 <div key={i} className="flex justify-between items-center py-2">
                                     <span className="font-medium">{l.language}</span>
                                     <Badge variant="secondary" className="text-xs">
