@@ -23,7 +23,10 @@ import { SECTION_IDS, ANIMATION_CONFIG } from "@/lib/constants";
 
 export default function Page() {
     const [isVisible, setIsVisible] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
     const heroRef = useRef<HTMLDivElement>(null);
+    const formRef = useRef<HTMLFormElement>(null);
     
     const { typedText, isComplete: isTypingComplete } = useTypingAnimation({
         text: "Hi, I'm Jaroslav — Software Engineer",
@@ -452,33 +455,64 @@ export default function Page() {
                             </div>
                             <Card className="border-0 bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-500 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
                                 <CardContent className="pt-6">
-                                    <form onSubmit={handleFormSubmit} className="space-y-4">
+                                    <form ref={formRef} onSubmit={async (e) => {
+                                        setIsSubmitting(true);
+                                        setSubmitStatus({ type: null, message: '' });
+                                        
+                                        const result = await handleFormSubmit(e);
+                                        
+                                        if (result.success) {
+                                            setSubmitStatus({ type: 'success', message: result.message });
+                                            formRef.current?.reset();
+                                        } else {
+                                            setSubmitStatus({ type: 'error', message: result.message });
+                                        }
+                                        
+                                        setIsSubmitting(false);
+                                    }} className="space-y-4">
                                         <div className="grid grid-cols-2 gap-4">
                                             <div>
                                                 <Label htmlFor="firstName">First Name</Label>
-                                                <Input id="firstName" placeholder="John" required className="hover:border-primary/50 focus:border-primary transition-colors duration-300" />
+                                                <Input id="firstName" name="firstName" placeholder="John" required className="hover:border-primary/50 focus:border-primary transition-colors duration-300" disabled={isSubmitting} />
                                             </div>
                                             <div>
                                                 <Label htmlFor="lastName">Last Name</Label>
-                                                <Input id="lastName" placeholder="Doe" required className="hover:border-primary/50 focus:border-primary transition-colors duration-300" />
+                                                <Input id="lastName" name="lastName" placeholder="Doe" required className="hover:border-primary/50 focus:border-primary transition-colors duration-300" disabled={isSubmitting} />
                                             </div>
                                         </div>
                                         <div>
                                             <Label htmlFor="email">Email</Label>
-                                            <Input id="email" type="email" placeholder="john@example.com" required className="hover:border-primary/50 focus:border-primary transition-colors duration-300" />
+                                            <Input id="email" name="email" type="email" placeholder="john@example.com" required className="hover:border-primary/50 focus:border-primary transition-colors duration-300" disabled={isSubmitting} />
                                         </div>
                                         <div>
                                             <Label htmlFor="message">Message</Label>
                                             <Textarea
                                                 id="message"
+                                                name="message"
                                                 placeholder="Tell me about your project..."
                                                 rows={4}
                                                 required
                                                 className="hover:border-primary/50 focus:border-primary transition-colors duration-300 resize-none"
+                                                disabled={isSubmitting}
                                             />
                                         </div>
-                                        <Button type="submit" className="w-full group hover:scale-105 transition-all duration-300">
-                                            Send Message
+                                        
+                                        {submitStatus.type && (
+                                            <div className={`p-4 rounded-lg text-sm ${submitStatus.type === 'success' ? 'bg-green-500/10 text-green-600 border border-green-500/20' : 'bg-red-500/10 text-red-600 border border-red-500/20'} animate-fade-in-up`}>
+                                                <div className="flex items-start gap-3">
+                                                    <span className="text-lg">{submitStatus.type === 'success' ? '✓' : '✕'}</span>
+                                                    <div>
+                                                        <p className="font-medium">{submitStatus.message}</p>
+                                                        {submitStatus.type === 'success' && (
+                                                            <p className="text-xs mt-1 opacity-80">Your message was automatically delivered via email.</p>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
+                                        
+                                        <Button type="submit" className="w-full group hover:scale-105 transition-all duration-300" disabled={isSubmitting}>
+                                            {isSubmitting ? 'Sending...' : 'Send Message'}
                                             <HugeiconsIcon icon={Mail01Icon} className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                                         </Button>
                                     </form>

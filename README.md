@@ -9,6 +9,7 @@ Personal portfolio website showcasing software engineering work, projects, and t
 - **Responsive Design** - Mobile-first approach with Tailwind CSS
 - **Dark/Light Mode** - System preference detection with smooth transitions
 - **Interactive Resume** - Dynamic resume page with structured experience data
+- **Contact Form** - Functional email form with validation and multiple integration options
 - **Smooth Animations** - Typing effects, fade-ins, and scroll-based interactions
 - **Production-Ready** - CI/CD pipeline with automated testing and deployment
 
@@ -61,6 +62,24 @@ Personal portfolio website showcasing software engineering work, projects, and t
    ```
    http://localhost:3000
    ```
+
+## ✉️ Email Configuration
+
+**Status: ✅ Working in Testing Mode**
+
+The contact form automatically sends emails via Resend! Currently configured to send to **musicbyblakk@gmail.com** (testing mode).
+
+**Quick Test:**
+```bash
+npm run dev
+# Go to http://localhost:3000, fill the form, check musicbyblakk@gmail.com
+```
+
+**For Production Setup:**
+See [RESEND_SETUP.md](./RESEND_SETUP.md) for instructions on:
+- Verifying your domain at Resend
+- Sending to dev@dxvil.com or any email address
+- Production deployment configuration
 
 ## 📜 Available Scripts
 

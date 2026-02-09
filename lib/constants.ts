@@ -26,3 +26,15 @@ export const ANIMATION_CONFIG = {
     velocityDamping: 0.8,
     parallaxFactors: [0.015, -0.02, 0.01],
 } as const;
+
+export const EMAIL_CONFIG = {
+    from: 'Portfolio Contact <dev@dxvil.com>',
+    to: ['dev@dxvil.com'], // Your email address
+    portfolioUrl: 'https://dev.dxvil.com',
+} as const;
+
+export const ERROR_MESSAGES = {
+    emailServiceNotConfigured: 'Email service is not properly configured',
+    emailSendFailed: 'Failed to send message',
+    validationFailed: 'Please check your input and try again',
+} as const;

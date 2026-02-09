@@ -48,13 +48,19 @@ describe('Navigation Utilities', () => {
 
   describe('handleFormSubmit', () => {
     let alertSpy: jest.SpyInstance
+    let fetchMock: jest.SpyInstance
 
     beforeEach(() => {
       alertSpy = jest.spyOn(window, 'alert').mockImplementation()
+      fetchMock = jest.spyOn(global, 'fetch').mockResolvedValue({
+        ok: true,
+        json: async () => ({ success: true, message: 'Message sent successfully' }),
+      } as Response)
     })
 
     afterEach(() => {
       alertSpy.mockRestore()
+      fetchMock.mockRestore()
     })
 
     it('should prevent default form submission', () => {
@@ -67,16 +73,30 @@ describe('Navigation Utilities', () => {
       expect(mockEvent.preventDefault).toHaveBeenCalled()
     })
 
-    it('should show success alert', () => {
+    it('should return success result', async () => {
+      const form = document.createElement('form')
+      form.innerHTML = `
+        <input name="firstName" value="John" />
+        <input name="lastName" value="Doe" />
+        <input name="email" value="john@example.com" />
+        <textarea name="message">Hello!</textarea>
+      ` 
+
       const mockEvent = {
         preventDefault: jest.fn(),
-      } as unknown as React.FormEvent
+        target: form,
+      } as unknown as React.FormEvent<HTMLFormElement>
 
-      handleFormSubmit(mockEvent)
+      const result = await handleFormSubmit(mockEvent)
 
-      expect(alertSpy).toHaveBeenCalledWith(
-        expect.stringContaining('Thank you for your message')
-      )
+      expect(fetchMock).toHaveBeenCalledWith('/api/contact', expect.objectContaining({
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+      }))
+      expect(result).toEqual({
+        success: true,
+        message: 'Message sent successfully'
+      })
     })
   })
 })
