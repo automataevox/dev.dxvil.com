@@ -11,23 +11,16 @@
             ]
         },
         {
-            "name": "Account API",
-            "url": "https://github.com/automataevox/account-api",
-            "summary": "REST API demonstrating layered architecture, separation of concerns, and state management patterns. Focus on maintainability and clear boundaries.",
+            "name": "Portfolio Website",
+            "url": "https://github.com/automataevox/dev.dxvil.com",
+            "summary": "Personal portfolio built with modern web technologies. Features custom cursor interactions, parallax effects, and functional contact form with automated email delivery. Comprehensive test coverage (156 tests) following SOLID principles with modular architecture. CI/CD pipeline with automated testing and deployment.",
             "skills": [
-                "Java",
-                "Spring Boot",
-                "REST API"
-            ]
-        },
-        {
-            "name": "Voxel Engine",
-            "url": "https://github.com/automataevox/MinecraftClone",
-            "summary": "Custom engine focused on performance optimization and data structure design for chunked world management.",
-            "skills": [
-                "Java",
-                "OpenGL",
-                "LWJGL"
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS 4",
+                "Jest",
+                "Resend API"
             ]
         }
     ]

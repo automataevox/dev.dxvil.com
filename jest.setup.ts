@@ -17,9 +17,9 @@ if (typeof Request === 'undefined') {
         json: async () => JSON.parse(init?.body as string || '{}'),
         text: async () => init?.body as string || '',
         clone: () => this,
-      } as any;
+      } as unknown as Request;
     }
-  } as any;
+  } as unknown as typeof Request;
 }
 
 if (typeof Response === 'undefined') {
@@ -34,9 +34,9 @@ if (typeof Response === 'undefined') {
         json: async () => (typeof body === 'string' ? JSON.parse(body) : body),
         text: async () => (typeof body === 'string' ? body : JSON.stringify(body)),
         clone: () => this,
-      } as any;
+      } as unknown as Response;
     }
-  } as any;
+  } as unknown as typeof Response;
 }
 
 if (typeof Headers === 'undefined') {
@@ -48,7 +48,7 @@ if (typeof Headers === 'undefined') {
         if (Array.isArray(init)) {
           init.forEach(([key, value]) => this.headers.set(key.toLowerCase(), value));
         } else if (init instanceof Headers) {
-          (init as any).headers.forEach((value: string, key: string) => {
+          (init as Headers & { headers: Map<string, string> }).headers.forEach((value: string, key: string) => {
             this.headers.set(key, value);
           });
         } else {
@@ -73,13 +73,13 @@ if (typeof Headers === 'undefined') {
     forEach(callback: (value: string, key: string) => void) {
       this.headers.forEach(callback);
     }
-  } as any;
+  } as unknown as typeof Headers;
 }
 
 // Mock NextResponse
 jest.mock('next/server', () => ({
   NextResponse: {
-    json: jest.fn((body: any, init?: ResponseInit) => {
+    json: jest.fn((body: unknown, init?: ResponseInit) => {
       const headers = new Headers(init?.headers);
       headers.set('content-type', 'application/json');
       return {
@@ -95,7 +95,7 @@ jest.mock('next/server', () => ({
     }),
   },
   NextRequest: class NextRequest {
-    private _body: any;
+    private _body: unknown;
     public url: string;
     public method: string;
     public headers: Headers;
@@ -116,10 +116,10 @@ jest.mock('next/server', () => ({
     }
 
     clone() {
-      return new (NextRequest as any)(this.url, {
+      return new NextRequest(this.url, {
         method: this.method,
         headers: this.headers,
-        body: this._body,
+        body: this._body as BodyInit,
       });
     }
   },

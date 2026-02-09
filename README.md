@@ -28,7 +28,7 @@ Personal portfolio website showcasing software engineering work, projects, and t
 **Testing**
 - [Jest 29.7.0](https://jestjs.io/) - Test runner
 - [React Testing Library 16.0.1](https://testing-library.com/react) - Component testing
-- 77 passing tests with 100% coverage on core features
+- 156 passing tests with comprehensive coverage on all features
 
 **DevOps & CI/CD**
 - GitHub Actions - Automated testing and deployment
@@ -114,9 +114,14 @@ npm test -- navigation.test.tsx
 ```
 
 **Test Coverage:**
-- 9 test suites
-- 77 passing tests
-- 100% coverage on hooks, components, and utilities
+- 13 test suites
+- 156 passing tests
+- Comprehensive coverage including:
+  - Hooks, components, and utilities
+  - API routes and email service
+  - Input validation and XSS prevention
+  - Email template generation
+  - Integration tests
 
 ## 🚢 Deployment
 
@@ -129,7 +134,7 @@ npm test -- navigation.test.tsx
 
 On every push and PR:
 1. ✅ Lint code with ESLint
-2. ✅ Run test suite (77 tests)
+2. ✅ Run test suite (156 tests)
 3. ✅ Build Next.js application
 4. ✅ Deploy to Vercel (main/prod branches only)
 
