@@ -11,6 +11,24 @@
             ]
         },
         {
+            "name": "Orbitr",
+            "url": "https://github.com/automataevox/Orbitr",
+            "summary": "Production-ready Docker-native self-hosting orchestration platform. Makes running Docker applications as simple as installing apps on your phone. Extension-first architecture with direct Docker API integration, automatic reverse proxy automation, health monitoring, and modern responsive UI. Built with monorepo structure using pnpm workspaces and Turborepo for optimal development workflow.",
+            "skills": [
+                "Next.js 15",
+                "TypeScript",
+                "Docker",
+                "dockerode",
+                "Prisma ORM",
+                "SQLite",
+                "TanStack Query",
+                "shadcn/ui",
+                "Tailwind CSS",
+                "pnpm",
+                "Turborepo"
+            ]
+        },
+        {
             "name": "Portfolio Website",
             "url": "https://github.com/automataevox/dev.dxvil.com",
             "summary": "Personal portfolio built with modern web technologies. Features custom cursor interactions, parallax effects, and functional contact form with automated email delivery. Comprehensive test coverage (156 tests) following SOLID principles with modular architecture. CI/CD pipeline with automated testing and deployment.",

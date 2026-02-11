@@ -52,7 +52,7 @@ export default function Page() {
             <CustomCursor mousePosition={mousePosition} />
             <Navigation activeSection={activeSection} onSectionClick={scrollToSection} />
             
-            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-12 sm:pb-20 relative">
+            <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-12 sm:pb-20 relative">
                 <BackgroundEffects mousePosition={mousePosition} />
                 
                 <section id="hero" ref={heroRef} className={`grid gap-6 sm:gap-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -77,7 +77,7 @@ export default function Page() {
                         <div className={`mt-3 sm:mt-4 text-center px-2 sm:px-0 transition-all duration-1000 delay-600 ${isTypingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-500/10 text-green-600 text-xs sm:text-sm font-medium">
                                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                                <span className="whitespace-nowrap">Available for contract and full-time opportunities</span>
+                                <span className="whitespace-nowrap">Contract and full-time opportunities</span>
                             </div>
                         </div>
                         <div className={`mt-4 sm:mt-6 flex justify-center px-4 sm:px-0 transition-all duration-1000 delay-700 ${isTypingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>

@@ -98,6 +98,11 @@
     },
     "additionalProjects": [
         {
+            "name": "Orbitr",
+            "url": "https://github.com/automataevox/Orbitr",
+            "summary": "Production-ready Docker-native self-hosting orchestration platform. Makes running Docker applications as simple as installing apps on your phone. Features extension-first architecture, direct Docker API integration, automatic reverse proxy, health monitoring, and modern UI built with Next.js 15 and shadcn/ui."
+        },
+        {
             "name": "Portfolio Website",
             "url": "https://github.com/automataevox/dev.dxvil.com",
             "summary": "Personal portfolio built with modern web technologies featuring custom cursor interactions, parallax effects, and functional contact form with automated email delivery. Comprehensive test coverage (156 tests) following SOLID principles."
