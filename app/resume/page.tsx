@@ -28,7 +28,7 @@ export default function Page() {
             <CustomCursor mousePosition={mousePosition} />
             <Navigation activeSection="resume" onSectionClick={scrollToSection} />
 
-            <div className="container mx-auto max-w-4xl px-4 pt-24 pb-20 relative">
+            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-12 sm:pb-20 relative">
                 <BackgroundEffects mousePosition={mousePosition} />
                 
                 <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
