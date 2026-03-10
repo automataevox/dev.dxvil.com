@@ -8,36 +8,26 @@
                 "Kotlin",
                 "Jetpack Compose",
                 "mDNS Discovery",
+                "Networking Protocols",
                 "TCP/UDP Networking",
-                "Android Development",
-                "Desktop Development",
-                "Swift",
                 "Multi-platform Architecture"
             ]
         },
         {
             "name": "The Artist Room",
             "demo": "https://theartistroom.eu",
-            "summary": "Artist tools, profile management and netowrking platform built with Next.js, React, TypeScript and TailwindCSS.",
+            "summary": "Production-ready SaaS platform for artist profile management and music submissions. Features full-stack architecture with artist authentication, profile management, music submission workflows, Spotify API integration, subscription billing via Stripe, and comprehensive admin dashboard.",
             "skills": [
                 "Next.js",
                 "TypeScript",
                 "Node.js",
-                "Postgres"
-            ]
-        },
-        {
-            "name": "Orbitr",
-            "url": "https://github.com/automataevox/Orbitr",
-            "summary": "Production-ready Docker-native self-hosting orchestration platform. Makes running Docker applications as simple as installing apps on your phone. Extension-first architecture with direct Docker API integration, automatic reverse proxy automation, health monitoring, and modern responsive UI. Built with monorepo structure using pnpm workspaces and Turborepo for optimal development workflow.",
-            "skills": [
-                "Next.js 15",
-                "TypeScript",
+                "PostgreSQL",
+                "Docker",
+                "Stripe API",
+                "Spotify API",
                 "TailwindCSS",
-                "Stripe",
-                "API",
-                "PostgreSQL"
+                "REST APIs"
             ]
-        }
+        }    
     ]
 }

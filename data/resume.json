@@ -11,6 +11,80 @@
         "location": "Havlíčkův Brod, Česká republika",
         "summary": "Systems & Full-Stack Engineer specializing in design, development, and operations of modern web systems and infrastructure. Experienced in Linux server administration (Debian, Ubuntu, RHEL), Node.js/TypeScript backend services, PostgreSQL/MySQL database design, automation, monitoring, and application deployment in Docker environments with CI/CD pipelines. Works across the entire stack from database schema and API design through frontend applications in React/Next.js to application operations on Linux infrastructure with monitoring, logging, and security measures."
     },
+    "competencies": [
+        "Full-Stack Architecture & Development",
+        "Backend Services (Node.js, TypeScript)",
+        "Database Design & Optimization (PostgreSQL, MySQL)",
+        "Frontend Development (React, Next.js)",
+        "DevOps & Infrastructure (Docker, Kubernetes, Linux)",
+        "CI/CD Pipelines & Automation",
+        "System Administration & Monitoring",
+        "API Design & Integration",
+        "Cloud Deployment (AWS, Linux VPS)",
+        "Multi-platform Development (Desktop, Android)"
+    ],
+    "techStack": {
+        "Backend": [
+            "Node.js",
+            "TypeScript",
+            "REST APIs",
+            "C# .NET Core",
+            "Spring Boot"
+        ],
+        "Frontend": [
+            "React",
+            "Next.js",
+            "TailwindCSS",
+            "TypeScript"
+        ],
+        "Database": [
+            "PostgreSQL",
+            "MySQL",
+            "Schema Design",
+            "Query Optimization"
+        ],
+        "DevOps": [
+            "Docker",
+            "Kubernetes",
+            "GitHub Actions",
+            "CI/CD Pipelines",
+            "Linux Administration"
+        ],
+        "Tools & Platforms": [
+            "Git",
+            "Grafana",
+            "Stripe API",
+            "Spotify API",
+            "AWS"
+        ]
+    },
+    "featuredProject": {
+        "name": "Artist Room – Music Platform",
+        "summary": "Production-ready SaaS platform for managing artist profiles and music submissions built with full-stack ownership from architecture through deployment and monitoring.",
+        "highlights": [
+            "Complete system architecture design (frontend / backend / database)",
+            "REST API and business logic implementation",
+            "PostgreSQL database schema design with optimization",
+            "Authentication and role-based access control",
+            "Stripe subscription billing integration",
+            "Spotify Web API integration",
+            "File upload infrastructure implementation",
+            "CI/CD pipelines with GitHub Actions",
+            "Docker containerization and Kubernetes orchestration",
+            "Application monitoring and log management with Grafana"
+        ],
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Node.js",
+            "PostgreSQL",
+            "Docker",
+            "Kubernetes",
+            "GitHub Actions",
+            "Stripe API",
+            "Spotify API"
+        ]
+    },
     "skills": [
         "Node.js",
         "TypeScript",
