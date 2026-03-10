@@ -21,7 +21,17 @@
             "summary": "Artist tools, profile management and netowrking platform built with Next.js, React, TypeScript and TailwindCSS.",
             "skills": [
                 "Next.js",
-                "React",
+                "TypeScript",
+                "Node.js",
+                "Postgres"
+            ]
+        },
+        {
+            "name": "Orbitr",
+            "url": "https://github.com/automataevox/Orbitr",
+            "summary": "Production-ready Docker-native self-hosting orchestration platform. Makes running Docker applications as simple as installing apps on your phone. Extension-first architecture with direct Docker API integration, automatic reverse proxy automation, health monitoring, and modern responsive UI. Built with monorepo structure using pnpm workspaces and Turborepo for optimal development workflow.",
+            "skills": [
+                "Next.js 15",
                 "TypeScript",
                 "TailwindCSS",
                 "Stripe",

@@ -1,18 +1,40 @@
+"use client";
+
 import Resume from "@/components/resume";
-import Link from "next/link";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { ArrowTurnBackwardIcon } from "@hugeicons/core-free-icons";
+import { CustomCursor } from "@/components/custom-cursor";
+import { Navigation } from "@/components/navigation";
+import { BackgroundEffects } from "@/components/background-effects";
+import { useMouseTracking } from "@/lib/hooks/useMouseTracking";
+import { scrollToSection } from "@/lib/utils/navigation";
+import { ANIMATION_CONFIG } from "@/lib/constants";
+import { useState, useEffect } from "react";
 
 export default function Page() {
-    return (
-        <main className="container mx-auto max-w-4xl py-20 px-4 relative">
-            <Link href="/" aria-label="Back to home" className="absolute left-4 top-4 inline-flex items-center rounded-md p-2 hover:bg-muted/10">
-                <HugeiconsIcon icon={ArrowTurnBackwardIcon} />
-            </Link>
+    const [isVisible, setIsVisible] = useState(false);
+    
+    const { mousePosition } = useMouseTracking({
+        velocityDamping: ANIMATION_CONFIG.velocityDamping,
+        stopTimeout: ANIMATION_CONFIG.mouseMoveTimeout
+    });
 
-            <section className="grid gap-8">
-                <Resume />
-            </section>
+    useEffect(() => {
+        // Initial animation state - suppress warning as this is the intended behavior
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setIsVisible(true);
+    }, []);
+
+    return (
+        <main className="min-h-screen bg-linear-to-br from-background to-muted/20 relative overflow-hidden">
+            <CustomCursor mousePosition={mousePosition} />
+            <Navigation activeSection="resume" onSectionClick={scrollToSection} />
+
+            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-12 sm:pb-20 relative">
+                <BackgroundEffects mousePosition={mousePosition} />
+                
+                <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <Resume />
+                </div>
+            </div>
         </main>
     );
 }

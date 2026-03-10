@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jaroslav Maša | Fullstack Developer",
-  description: "Portfolio website of Jaroslav Maša, a skilled fullstack developer specializing in modern web technologies.",
+  title: "Jaroslav Maša - Software Engineer",
+  description: "Software engineer focused on designing and building production systems with long-term stability in mind. End-to-end ownership from architecture through implementation to operations.",
 };
 
 export default function RootLayout({

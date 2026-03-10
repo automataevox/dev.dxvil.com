@@ -1,5 +1,5 @@
 {
-    "pdfTitle": "Jaroslav-Resume",
+    "pdfTitle": "Jaroslav-Masa-Resume",
     "basics": {
         "name": "Jaroslav Maša",
         "label": "Full-Stack & Platform Engineer (Linux / Node.js / TypeScript / PostgreSQL)",
@@ -61,9 +61,9 @@
         },
         {
             "company": "MONETA Money Bank, a.s.",
-            "position": "System Administrator",
-            "startDate": "2024-01",
-            "endDate": "2025-07",
+            "position": "Application Operations Engineer",
+            "startDate": "Jan 2024",
+            "endDate": "Jul 2025",
             "location": "Prague, Czech Republic",
             "summary": "Managed and tuned multiple application environments (DEV / TST / PROD) and production infrastructure.",
             "highlights": [
@@ -79,9 +79,9 @@
         },
         {
             "company": "2Ring",
-            "position": "Fullstack Developer (Backend)",
-            "startDate": "2023-07",
-            "endDate": "2023-09",
+            "position": "Backend Developer",
+            "startDate": "Jul 2023",
+            "endDate": "Sep 2023",
             "location": "Liberec, Czech Republic",
             "summary": "Backend development for call center (C# .NET Core / Framework).",
             "highlights": [
@@ -94,9 +94,9 @@
         },
         {
             "company": "Mailprofiler s.r.o.",
-            "position": "System Administrator",
-            "startDate": "2022-09",
-            "endDate": "2023-07",
+            "position": "Infrastructure Engineer",
+            "startDate": "Sep 2022",
+            "endDate": "Jul 2023",
             "location": "Liberec, Czech Republic",
             "summary": "Managed Linux and Windows servers, email infrastructure and network operations.",
             "highlights": [
