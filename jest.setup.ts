@@ -3,8 +3,8 @@ import { TextEncoder as UtilTextEncoder, TextDecoder as UtilTextDecoder } from '
 
 // Polyfill TextEncoder and TextDecoder for Jest
 if (typeof global.TextEncoder === 'undefined') {
-  global.TextEncoder = UtilTextEncoder;
-  global.TextDecoder = UtilTextDecoder;
+  global.TextEncoder = UtilTextEncoder as unknown as typeof globalThis.TextEncoder;
+  global.TextDecoder = UtilTextDecoder as unknown as typeof globalThis.TextDecoder;
 }
 
 // Mock fetch global
