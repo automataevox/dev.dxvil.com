@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom'
+import { TextEncoder as UtilTextEncoder, TextDecoder as UtilTextDecoder } from 'util'
 
 // Polyfill TextEncoder and TextDecoder for Jest
 if (typeof global.TextEncoder === 'undefined') {
-  const { TextEncoder, TextDecoder } = require('util');
-  global.TextEncoder = TextEncoder;
-  global.TextDecoder = TextDecoder;
+  global.TextEncoder = UtilTextEncoder;
+  global.TextDecoder = UtilTextDecoder;
 }
 
 // Mock fetch global
