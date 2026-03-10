@@ -1,25 +1,32 @@
 {
     "projects": [
         {
-            "name": "DXVIL Main Page",
-            "url": "https://github.com/automataevox/dxvil_links",
-            "demo": "https://dxvil.com",
-            "summary": "A Next.js & TailwindCSS‑based web project laid out as a links page app.",
+            "name": "CrossFlow",
+            "url": "https://github.com/automataevox/crossflow",
+            "summary": "LAN-based clipboard synchronization tool enabling seamless copy-paste across Windows, Android, and macOS devices via TCP/mDNS auto-discovery. Zero-config, no cloud, peer-to-peer architecture with bidirectional 100-500ms sync latency.",
+            "skills": [
+                "Kotlin",
+                "Jetpack Compose",
+                "mDNS Discovery",
+                "TCP/UDP Networking",
+                "Android Development",
+                "Desktop Development",
+                "Swift",
+                "Multi-platform Architecture"
+            ]
+        },
+        {
+            "name": "The Artist Room",
+            "demo": "https://theartistroom.eu",
+            "summary": "Artist tools, profile management and netowrking platform built with Next.js, React, TypeScript and TailwindCSS.",
             "skills": [
                 "Next.js",
                 "React",
                 "TypeScript",
-                "TailwindCSS"
-            ]
-        },
-        {
-            "name": "MinecraftClone",
-            "url": "https://github.com/automataevox/MinecraftClone",
-            "summary": "A custom voxel engine written in Java.",
-            "skills": [
-                "Java",
-                "OpenGL",
-                "LWJGL"
+                "TailwindCSS",
+                "Stripe",
+                "API",
+                "PostgreSQL"
             ]
         }
     ]

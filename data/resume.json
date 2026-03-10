@@ -2,38 +2,61 @@
     "pdfTitle": "Jaroslav-Resume",
     "basics": {
         "name": "Jaroslav Maša",
-        "label": "Fullstack Developer & Sysadmin",
-        "email": "dev@dxvil.com",
+        "label": "Full-Stack & Platform Engineer (Linux / Node.js / TypeScript / PostgreSQL)",
+        "email": "jaroslav26masa@icloud.com",
         "phone": "+420 608 420 281",
         "website": "https://dev.dxvil.com",
         "github": "https://github.com/automataevox",
         "linkedin": "https://www.linkedin.com/in/jaroslavmasa",
-        "location": "Remote / Hybrid (Czechia)",
-        "summary": "Fullstack developer with systems and automation background—bridging dev and ops to deliver reliable services."
+        "location": "Havlíčkův Brod, Česká republika",
+        "summary": "Systems & Full-Stack Engineer specializing in design, development, and operations of modern web systems and infrastructure. Experienced in Linux server administration (Debian, Ubuntu, RHEL), Node.js/TypeScript backend services, PostgreSQL/MySQL database design, automation, monitoring, and application deployment in Docker environments with CI/CD pipelines. Works across the entire stack from database schema and API design through frontend applications in React/Next.js to application operations on Linux infrastructure with monitoring, logging, and security measures."
     },
     "skills": [
-        "Next.js",
-        "TypeScript",
         "Node.js",
-        "Linux",
+        "TypeScript",
+        "REST API design",
+        "React",
+        "Next.js",
+        "PostgreSQL",
+        "MySQL",
         "Docker",
+        "Linux",
+        "Kubernetes",
+        "GitHub Actions",
+        "CI/CD pipelines",
+        "System administration",
+        "Authentication",
+        "Database design",
+        "DevOps",
         "Automation",
-        "Postgres",
+        "Monitoring",
+        "Grafana",
+        "Bash scripting",
+        "Python scripting",
+        "Jetpack Compose",
+        "Android Development",
         "Java",
-        "PHP",
-        "REST APIs"
+        "Spring Boot",
+        "Stripe API",
+        "Spotify API"
     ],
     "experience": [
         {
             "company": "Mad-Hall s.r.o.",
-            "position": "Fullstack Developer",
+            "position": "Tech Founder & Full-Stack Developer",
             "startDate": "2025-11",
             "endDate": "Present",
             "location": "Remote",
-            "summary": "Developing and maintaining web applications using PHP.",
+            "summary": "Architecting, developing, and maintaining web applications with full-cycle ownership from architecture through deployment and monitoring.",
             "highlights": [
-                "Built and maintained web applications with PHP",
-                "Collaborated on feature development and bug fixes"
+                "System architecture design and technical decision-making",
+                "Full-stack development (backend and frontend)",
+                "Database design and optimization",
+                "CI/CD pipeline configuration and automation",
+                "Infrastructure deployment and configuration",
+                "Application monitoring and log management",
+                "Performance optimization and maintenance",
+                "Feature development and technical improvements"
             ]
         },
         {
@@ -42,10 +65,16 @@
             "startDate": "2024-01",
             "endDate": "2025-07",
             "location": "Prague, Czech Republic",
-            "summary": "Administer DEV/TST/PROD environments; automate operations and support backend services.",
+            "summary": "Managed and tuned multiple application environments (DEV / TST / PROD) and production infrastructure.",
             "highlights": [
-                "Maintained Apache/Tomcat stacks and automated maintenance",
-                "Improved reliability through automation and monitoring"
+                "Managed and tuned multiple application environments (DEV / TST / PROD)",
+                "Managed Apache Tomcat and Apache HTTPD servers",
+                "Configuration of system variables and application runtime optimization",
+                "Automated log management and system protocol maintenance",
+                "SSL/TLS configuration and basic system hardening",
+                "Infrastructure migration support to AWS (certificate verification)",
+                "Security testing using Check Point SandBlast",
+                "Production incident resolution within multifunctional team"
             ]
         },
         {
@@ -54,10 +83,13 @@
             "startDate": "2023-07",
             "endDate": "2023-09",
             "location": "Liberec, Czech Republic",
-            "summary": "Implemented REST APIs and backend features for enterprise tooling.",
+            "summary": "Backend development for call center (C# .NET Core / Framework).",
             "highlights": [
-                "Delivered REST endpoints and business logic",
-                "Authored tests and participated in code reviews"
+                "Backend development for call center (C# .NET Core / Framework)",
+                "REST API design and implementation",
+                "Backend business logic implementation",
+                "Unit testing",
+                "Work in agile development team (6 developers)"
             ]
         },
         {
@@ -66,123 +98,97 @@
             "startDate": "2022-09",
             "endDate": "2023-07",
             "location": "Liberec, Czech Republic",
-            "summary": "Managed internal infrastructure and automated operational tasks.",
+            "summary": "Managed Linux and Windows servers, email infrastructure and network operations.",
             "highlights": [
-                "Managed Linux/Windows servers and email delivery",
-                "Automated tasks to improve stability"
+                "Linux and Windows server management",
+                "Email infrastructure management (Postfix)",
+                "SPF / DKIM / DMARC configuration",
+                "Network management (DNS, DHCP, VPN, firewall)",
+                "System monitoring and operations optimization",
+                "Administrator task automation (Bash / PowerShell)",
+                "Backup and system service management"
             ]
         }
     ],
     "projects": [
         {
-            "name": "Account API",
-            "url": "https://github.com/automataevox/account-api",
-            "summary": "Spring Boot REST API (Java 21) demonstrating layered architecture, DTO validation, error handling, and state-based account logic.",
-            "skills": [
-                "Java",
-                "Spring Boot",
-                "REST API"
-            ]
-        },
-        {
-            "name": "MinecraftClone",
-            "url": "https://github.com/automataevox/MinecraftClone",
-            "summary": "A custom voxel engine written in Java, focused on system design, performance optimization, and data structure management. Demonstrates chunkeds world management, rendering pipeline organization, and performance tuning.",
-            "skills": [
-                "Java",
-                "OpenGL",
-                "LWJGL"
-            ]
-        },
-        {
-            "name": "Pika Bot",
-            "url": "https://github.com/automataevox/pika-bot",
-            "summary": "A Discord bot written in JavaScript, structured with modular command files and bot logic for interaction on Discord. Demonstrates bot setup with event handling, slash commands, and configuration via `package.json` and command modules.",
-            "skills": [
-                "JavaScript",
-                "Discord.js",
-                "Node.js"
-            ]
-        },
-        {
-            "name": "DXVIL Main Page",
-            "url": "https://github.com/automataevox/dxvil_links",
-            "summary": "A Next.js & TailwindCSS‑based web project laid out as a links/landing page app using TypeScript and React. Demonstrates full‑stack frontend configuration and component structuring.",
+            "name": "Artist Room – Music Platform",
+            "summary": "Production-ready SaaS platform for managing artist profiles and music submissions.",
+            "technology": "Next.js / TypeScript / Node.js / PostgreSQL / Docker",
+            "highlights": [
+                "Complete system architecture design (frontend / backend / database)",
+                "REST API and business logic implementation",
+                "PostgreSQL database schema design",
+                "Authentication and role-based access control",
+                "Stripe subscription billing integration",
+                "Spotify Web API integration",
+                "File upload infrastructure implementation",
+                "Application containerization with Docker",
+                "CI/CD pipelines with GitHub Actions",
+                "Application deployment and operations in Linux server environment",
+                "Monitoring and log management"
+            ],
             "skills": [
                 "Next.js",
-                "React",
                 "TypeScript",
-                "TailwindCSS"
+                "Node.js",
+                "PostgreSQL",
+                "Docker",
+                "GitHub Actions",
+                "Stripe API",
+                "Spotify API",
+                "Kubernetes",
+                "Grafana"
             ]
         },
         {
-            "name": "Discord Bot with AI Module",
-            "summary": "A Discord bot in JavaScript with modular event handlers and an AI module (`ai_module.js`) that connected to CharacterAI services (now deprecated), demonstrating AI-driven bot interactions and message processing.",
+            "name": "CrossFlow",
+            "url": "https://github.com/automataevox/crossflow",
+            "summary": "LAN-based clipboard synchronization tool enabling seamless copy-paste across Windows, Android, and macOS devices via TCP/mDNS auto-discovery. Zero-config, no cloud, peer-to-peer architecture.",
             "skills": [
-                "JavaScript",
-                "Node.js",
-                "Discord.js",
-                "AI integration"
+                "Kotlin",
+                "Jetpack Compose",
+                "mDNS Discovery",
+                "TCP/UDP Networking",
+                "Android Development",
+                "Desktop Development"
             ]
         }
     ],
     "education": [
         {
-            "institution": "SČMSD Humpolec s.r.o.",
+            "institution": "Střední škola Informatiky a Cestovního ruchu SČMSD Humpolec s.r.o.",
             "area": "Computer Science",
-            "startDate": "2018",
-            "endDate": "2022",
-            "gpa": "3.8"
+            "studyType": "Secondary School",
+            "startDate": "2018-09",
+            "endDate": "2022-05"
         }
     ],
     "certifications": [
         {
             "name": "Gemini Certified Educator",
             "issuer": "Google for Education",
-            "date": "2025-11",
-            "expires": "2028-11",
+            "date": "2025-01",
+            "expires": "2028-01",
             "credentialId": "167943547"
         },
         {
-            "name": "PHP",
-            "issuer": "Sololearn",
-            "date": "2023-02",
-            "credentialId": "CT-2DFFXNSW"
-        },
-        {
-            "name": "Game Development with JS",
+            "name": "Game Development with JavaScript",
             "issuer": "Sololearn",
             "date": "2022-09",
             "credentialId": "CT-LRKHNGT5"
         },
         {
-            "name": "HTML course",
-            "issuer": "Sololearn",
-            "date": "2022-03",
-            "credentialId": "#1014-25182761"
-        },
-        {
-            "name": "Java",
-            "issuer": "Sololearn",
-            "date": "2022-03",
-            "credentialId": "25182761-1068"
-        },
-        {
-            "name": "Responsive Web Design course",
+            "name": "Responsive Web Design",
             "issuer": "Sololearn",
             "date": "2022-03",
             "credentialId": "#1162-25182761"
         },
         {
-            "name": "SQL",
-            "issuer": "Mimo",
+            "name": "Web Development Fundamentals",
+            "issuer": "Sololearn",
             "date": "2022-03",
-            "notes": "Skills: Server Side"
-        },
-        {
-            "name": "Web Development",
-            "issuer": "Mimo",
-            "date": "2022-03"
+            "credentialId": "#1141-25182761"
         }
     ],
     "languages": [
@@ -192,7 +198,15 @@
         },
         {
             "language": "English",
-            "fluency": "Advanced"
+            "fluency": "Advanced (conversational and written)"
         }
-    ]
+    ],
+    "softSkills": [
+        "Independence and technical curiosity",
+        "Analytical thinking",
+        "Quick learning of new technologies",
+        "Complex technical problem solving",
+        "Communication of technical solutions"
+    ],
+    "careerGoal": "Apply expertise in Systems/Platform Engineer, DevOps Engineer, or Backend/Full-Stack Developer role where I can combine experience with application development, infrastructure management, and systems automation. Goal is to design reliable and secure systems, improve infrastructure through automation, and contribute to technically sound products."
 }
