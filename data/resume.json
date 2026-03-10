@@ -233,9 +233,7 @@
         {
             "institution": "Střední škola Informatiky a Cestovního ruchu SČMSD Humpolec s.r.o.",
             "area": "Computer Science",
-            "studyType": "Secondary School",
-            "startDate": "2018-09",
-            "endDate": "2022-05"
+            "period": "2018 - 2022"
         }
     ],
     "certifications": [
