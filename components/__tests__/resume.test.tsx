@@ -201,7 +201,7 @@ describe('Resume', () => {
         const { container } = render(<Resume />);
 
         const article = container.querySelector('article');
-        expect(article).toHaveClass('max-w-none', 'space-y-8');
+        expect(article).toHaveClass('max-w-none', 'space-y-6');
     });
 
     it('should render email as mailto link', () => {

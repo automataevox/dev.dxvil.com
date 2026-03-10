@@ -1,5 +1,12 @@
 import '@testing-library/jest-dom'
 
+// Polyfill TextEncoder and TextDecoder for Jest
+if (typeof global.TextEncoder === 'undefined') {
+  const { TextEncoder, TextDecoder } = require('util');
+  global.TextEncoder = TextEncoder;
+  global.TextDecoder = TextDecoder;
+}
+
 // Mock fetch global
 if (typeof fetch === 'undefined') {
   global.fetch = jest.fn();
